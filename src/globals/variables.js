@@ -1,0 +1,1 @@
+const APP_FOLDER_NAME = '/react-movie-app'
