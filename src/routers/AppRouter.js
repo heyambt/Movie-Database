@@ -11,6 +11,7 @@ import Home from '../components/Home';
 import About from '../components/Footer';
 import Footer from '../components/Footer';
 import MyMovies from '../components/MyMovies';
+import Nav from '../components/Nav';
 
 
 
@@ -18,6 +19,7 @@ import MyMovies from '../components/MyMovies';
 const AppRouter = () => (
     <Router basename={APP_FOLDER_NAME}>
 		<div className="wrapper">
+			<Nav />
 			<Switch>
 				<Route path={'/'} exact><Home /></Route>
 			</Switch>
