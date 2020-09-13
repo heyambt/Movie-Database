@@ -1,0 +1,12 @@
+header {
+    background-color: rgb(128, 0, 117);
+    padding: 0;
+    h1 {
+        // @include flatten;
+        text-align: center;
+    }
+    a {
+        text-decoration: none;
+        color: rgb(233, 229, 233);
+    }
+}
