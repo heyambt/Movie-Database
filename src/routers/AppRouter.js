@@ -26,9 +26,8 @@ const AppRouter = () => (
 				<Route path={'/'} exact><Home /></Route>
 				<Route path={'/about'} exact><About /></Route>
 				<Route><PageNotFound /></Route>
-
 			</Switch>
-			
+			<Footer/>
 		</div>
 	</Router>
 )
