@@ -2,16 +2,18 @@ import React from 'react';
 import {
     BrowserRouter as Router,
     Switch,
-    Route,
+	Route,
+	Link
   } from "react-router-dom";
 
 import { APP_FOLDER_NAME } from '../globals/variables';
-import Header from '../components/About';
+import Header from '../components/Header';
 import Home from '../components/Home';
-import About from '../components/Footer';
+import About from '../components/About';
 import Footer from '../components/Footer';
 import MyMovies from '../components/MyMovies';
 import Nav from '../components/Nav';
+import PageNotFound from '../components/PageNotFound';
 
 
 
@@ -22,7 +24,11 @@ const AppRouter = () => (
 			<Nav />
 			<Switch>
 				<Route path={'/'} exact><Home /></Route>
+				<Route path={'/about'} exact><About /></Route>
+				<Route><PageNotFound /></Route>
+
 			</Switch>
+			
 		</div>
 	</Router>
 )
