@@ -4,7 +4,7 @@ class Home extends Component {
 render(){
     return(
         <div>
-        <h1>Movie </h1>
+        <h1>Our Movie Database </h1>
         </div>
         );
     }
