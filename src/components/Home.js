@@ -1,13 +1,42 @@
-import React, {Component} from 'react';
+import React, {Components} from 'react';
 
 const Home = () => (
     <main>
 		<section>
-			<h2>Home Page</h2>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit porro, dolorem, quod facere enim voluptate provident quo labore vero repellat nemo animi ad exercitationem rem quos, possimus libero deleniti laudantium?</p>
+			<div className='searchbar-wrapper'>
+				<form className='search-box-form'>
+					<input type='text' name='search' placeholder='Search for movie'></input>
+				</form>
+			</div>		
+			<div className='sort-movie-by'>
+			<label for="sort-movie">What's On</label>
+					<select name="selection" id="select" form="select-movie">
+					<option value="popular">Popular</option>
+					<option value="toprated">Top Rated</option>
+					<option value="nowplaying">Now Playing</option>
+					<option value="upcoming">Upcoming</option>
+					</select>
+			</div>
+			<section className='list-0f-movies'>
+				<div className='movies-list'>
+					<div className="movie-01">
+					<div className='movie-01-poster'>
+						<figure>
+							<a href></a>
+						</figure>
+						
+					</div>
+						<div className='movie-01-info'></div>
+						
+					</div>
+
+				</div>
+			</section>
+			
 		</section>
-	</main>
+    </main>
 );
+
 
 
 export default Home;
