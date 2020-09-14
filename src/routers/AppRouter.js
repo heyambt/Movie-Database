@@ -9,7 +9,6 @@ import {
 import { APP_FOLDER_NAME } from '../globals/variables';
 import Header from '../components/Header';
 import Home from '../components/Home';
-import SearchBar from  '../components/SearchBar';
 import About from '../components/About';
 import Footer from '../components/Footer';
 import MyMovies from '../components/MyMovies';

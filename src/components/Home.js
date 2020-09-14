@@ -5,6 +5,13 @@ const Home = () => {
 	
 	return(
     <main>
+		 <section>
+        <div className='searchbar-wrapper'>
+				<form className='search-box-form'>
+					<input type='text' name='search' placeholder='Search for movie'></input>
+				</form>
+        </div>	
+        </section>
 		<section>
 				
 			<div className='sort-movie-by'>
