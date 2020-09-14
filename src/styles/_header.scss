@@ -10,12 +10,46 @@ header {
        font-family: cursive;
        
     }
+
+    li{
+        display: inline;
+    }
     a {
         text-decoration: none;
         color:#581845 ;
         font-size: 50px;
         font-weight: bolder;
-        padding: 10px;
+       
 
     }
 }
+
+nav {
+    .menu{
+        background-color:rgba(195, 65, 207, 0.212);
+    
+    }
+       ul {
+           // @include flatten(true, false);
+           display: flex;
+       }
+       li {
+           flex: 1;
+           list-style-type: none;
+          
+       }
+       a {
+           display: block;
+           text-decoration: none;
+           font-size: 25px;
+           font-weight: bolder;
+           color: rgb(240, 233, 235);
+           line-height: 40px;
+           text-align: center;
+           &:hover, &:focus, &:active {
+               background-color: rgba(rgb(71, 159, 231), 0.3);
+           }
+
+    }
+  
+    }

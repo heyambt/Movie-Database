@@ -12,7 +12,6 @@ import Home from '../components/Home';
 import About from '../components/About';
 import Footer from '../components/Footer';
 import MyMovies from '../components/MyMovies';
-import Nav from '../components/Nav';
 import PageNotFound from '../components/PageNotFound';
 
 
@@ -23,7 +22,6 @@ const AppRouter = () => (
     <Router basename={APP_FOLDER_NAME}>
 		<div className="wrapper">
 			<Header />
-			<Nav />
 			<Switch>
 				<Route path={'/'} exact><Home /></Route>
 				<Route path={'/about'} exact><About /></Route>
