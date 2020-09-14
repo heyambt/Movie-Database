@@ -1,5 +1,6 @@
 import React, {Components} from 'react';
 
+
 const Home = () => {
 	
 	return(
