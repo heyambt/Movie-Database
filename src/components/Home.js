@@ -1,13 +1,11 @@
 import React, {Components} from 'react';
 
-const Home = () => (
+const Home = () => {
+	
+	return(
     <main>
 		<section>
-			<div className='searchbar-wrapper'>
-				<form className='search-box-form'>
-					<input type='text' name='search' placeholder='Search for movie'></input>
-				</form>
-			</div>		
+				
 			<div className='sort-movie-by'>
 			<label for="sort-movie">What's On</label>
 					<select name="selection" id="select" form="select-movie">
@@ -36,6 +34,7 @@ const Home = () => (
 		</section>
     </main>
 );
+	}
 
 
 
