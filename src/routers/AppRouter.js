@@ -11,12 +11,7 @@ import Header from '../components/Header';
 import Home from '../components/Home';
 import About from '../components/About';
 import Footer from '../components/Footer';
-<<<<<<< HEAD
-import MyMovies from '../components/MyMovies';
-=======
-import Favorites from '../components/Favorites';
-import Nav from '../components/Nav';
->>>>>>> 130e176c0128ac7e82fa0154f67beb302396b04d
+import Favourites from '../components/Favorites';
 import PageNotFound from '../components/PageNotFound';
 
 
