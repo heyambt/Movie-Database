@@ -1,12 +1,17 @@
 header {
-    background-color: rgb(128, 0, 117);
+    background-color: rgba(76, 143, 231, 0.568);
     padding: 0;
     h1 {
         // @include flatten;
-        text-align: center;
+       display: flex;
+       margin: 10px;
+       
     }
     a {
         text-decoration: none;
-        color: rgb(233, 229, 233);
+        color: rgb(31, 51, 235);
+        font-size: 30px;
+        padding: 10px;
+
     }
 }

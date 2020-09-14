@@ -8,6 +8,7 @@ const Home = () => {
 				
 			<div className='sort-movie-by'>
 			<label for="sort-movie">What's On</label>
+			
 					<select name="selection" id="select" form="select-movie">
 					<option value="popular">Popular</option>
 					<option value="toprated">Top Rated</option>
