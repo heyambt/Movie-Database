@@ -9,14 +9,17 @@ const Home = () => {
 		<section className='sort'>
 				
 			<div className='sort-movie-by'>
-			<label for="sort-movie">What's On</label>
-			
+			<form>
+				<label for="sort-movie">What's On</label>
 					<select name="selection" id="select" form="select-movie">
-					<option value="popular">Popular</option>
-					<option value="toprated">Top Rated</option>
-					<option value="nowplaying">Now Playing</option>
-					<option value="upcoming">Upcoming</option>
+						<option value="popular">Popular</option>
+						<option value="toprated">Top Rated</option>
+						<option value="nowplaying">Now Playing</option>
+						<option value="upcoming">Upcoming</option>
 					</select>
+				<button>Select</button>
+			</form>
+			
 			</div>
 		</section>
 		<section className='list-0f-movies'>
