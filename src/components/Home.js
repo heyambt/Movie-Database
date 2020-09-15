@@ -5,14 +5,8 @@ const Home = () => {
 	
 	return(
     <main>
-		 <section>
-        <div className='searchbar-wrapper'>
-				<form className='search-box-form'>
-					<input type='text' name='search' placeholder='Search for movie'></input>
-				</form>
-        </div>	
-        </section>
-		<section>
+		
+		<section className='sort'>
 				
 			<div className='sort-movie-by'>
 			<form>
@@ -27,22 +21,145 @@ const Home = () => {
 			</form>
 			
 			</div>
-			<section className='list-0f-movies'>
+		</section>
+		<section className='list-0f-movies'>
 				<div className='movies-list'>
 					<div className="movie-01">
-					<div className='movie-01-poster'>
-						<figure>
-							<a href></a>
-						</figure>
-						
+					<div className='movie-poster'>
+					<figure><img src="" alt="" /></figure>
+					</div>			
+					<div className='movie-context'>
+						<h3>movie name</h3>
+					<div className='release-date'></div>
+					<div className='rating'></div>
+					<div className='summary'></div>
+					</div>								
 					</div>
-						<div className='movie-01-info'></div>
-						
+					<div className="movie-02">
+					<div className='movie-poster'>
+					<figure><img src="" alt="" /></figure>
+					</div>			
+					<div className='movie-context'>
+						<h3>movie name</h3>
+					<div className='release-date'></div>
+					<div className='rating'></div>
+					<div className='summary'></div>
+					</div>								
+					</div>
+					<div className="movie-03">
+					<div className='movie-poster'>
+					<figure><img src="" alt="" /></figure>
+					</div>			
+					<div className='movie-context'>
+						<h3>movie name</h3>
+					<div className='release-date'></div>
+					<div className='rating'></div>
+					<div className='summary'></div>
+					</div>								
+					</div>
+					<div className="movie-04">
+					<div className='movie-poster'>
+					<figure><img src="" alt="" /></figure>
+					</div>			
+					<div className='movie-context'>
+						<h3>movie name</h3>
+					<div className='release-date'></div>
+					<div className='rating'></div>
+					<div className='summary'></div>
+					</div>								
+					</div>
+					<div className="movie-05">
+					<div className='movie-poster'>
+					<figure><img src="" alt="" /></figure>
+					</div>			
+					<div className='movie-context'>
+						<h3>movie name</h3>
+					<div className='release-date'></div>
+					<div className='rating'></div>
+					<div className='summary'></div>
+					</div>								
+					</div>
+					<div className="movie-06">
+					<div className='movie-poster'>
+					<figure><img src="" alt="" /></figure>
+					</div>			
+					<div className='movie-context'>
+						<h3>movie name</h3>
+					<div className='release-date'></div>
+					<div className='rating'></div>
+					<div className='summary'></div>
+					</div>								
+					</div>
+					<div className="movie-07">
+					<div className='movie-poster'>
+					<figure><img src="" alt="" /></figure>
+					</div>			
+					<div className='movie-context'>
+						<h3>movie name</h3>
+					<div className='release-date'></div>
+					<div className='rating'></div>
+					<div className='summary'></div>
+					</div>								
+					</div>
+					<div className="movie-08">
+					<div className='movie-poster'>
+					<figure><img src="" alt="" /></figure>
+					</div>			
+					<div className='movie-context'>
+						<h3>movie name</h3>
+					<div className='release-date'></div>
+					<div className='rating'></div>
+					<div className='summary'></div>
+					</div>								
+					</div>
+					<div className="movie-09">
+					<div className='movie-poster'>
+					<figure><img src="" alt="" /></figure>
+					</div>			
+					<div className='movie-context'>
+						<h3>movie name</h3>
+					<div className='release-date'></div>
+					<div className='rating'></div>
+					<div className='summary'></div>
+					</div>								
+					</div>
+					<div className="movie-10">
+					<div className='movie-poster'>
+					<figure><img src="" alt="" /></figure>
+					</div>			
+					<div className='movie-context'>
+						<h3>movie name</h3>
+					<div className='release-date'></div>
+					<div className='rating'></div>
+					<div className='summary'></div>
+					</div>								
+					</div>
+					<div className="movie-11">
+					<div className='movie-poster'>
+					<figure><img src="" alt="" /></figure>
+					</div>			
+					<div className='movie-context'>
+						<h3>movie name</h3>
+					<div className='release-date'></div>
+					<div className='rating'></div>
+					<div className='summary'></div>
+					</div>								
+					</div>
+					<div className="movie-12">
+					<div className='movie-poster'>
+					<figure><img src="" alt="" /></figure>
+					</div>			
+					<div className='movie-context'>
+						<h3>movie name</h3>
+					<div className='release-date'></div>
+					<div className='rating'></div>
+					<div className='summary'></div>
+					</div>								
 					</div>
 
-				</div>
-			</section>
-			
+					
+					</div>
+					
 		</section>
     </main>
 );
