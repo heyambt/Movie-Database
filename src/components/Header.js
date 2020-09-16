@@ -5,17 +5,19 @@ import { NavLink } from 'react-router-dom';
 
 const Header = () => (
     
-	<header className="heading">
-        <div>
+	<header >
+        <div className="heading">
             <h1><Link to={'/'}>Reels</Link></h1>
-            
-		    <nav className="menu">
+
+            <div className="menu">
+		    <nav >
                 <ul>
                     <li><NavLink to={'/'} exact>Home</NavLink></li>
                     <li><NavLink to={'/about'}>About</NavLink></li>
                     <li><NavLink to={'/favourites'}>Favourites</NavLink></li>
                 </ul>
 	        </nav>
+            </div>
         </div>
     	
 
