@@ -1,5 +1,8 @@
-import React, {Components} from 'react';
+import React, {Components, useState} from 'react';
 
+
+
+// const [movieData, setMovieData] = useState(null);
 
 const Home = () => {
 	
@@ -158,7 +161,7 @@ const Home = () => {
 					</div>
 
 					
-					</div>
+				</div>
 					
 		</section>
     </main>
