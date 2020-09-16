@@ -15,3 +15,12 @@ const mi = {
     m12:'harleyquinn.jpg'
     
 }
+
+function setMovie(obj){
+    let poster = 
+    let movieDate = //new Date(strDate);
+    let movieTitle = //days[date.getDay()];
+    let movieRate = //months[date.getMonth()];
+    let movieSummary = //date.getDate();
+    obj.date = `${poster} ${movieTitle} ${movieRate} ${movieDate} ${movieSummary}`;
+}

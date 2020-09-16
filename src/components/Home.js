@@ -1,5 +1,5 @@
 import React, {Components, useState} from 'react';
-
+import MovieGrid from '../components/MovieGrid';
 
 
 // const [movieData, setMovieData] = useState(null);
