@@ -1,4 +1,4 @@
-import React, {Components, useState} from 'react';
+import React, {Components, useState, useEffect} from 'react';
 import MovieGrid from '../components/MovieGrid';
 import { API_KEY_ONLY, API_URL, IMAGE_URL} from '../globals/variables';
 
@@ -10,6 +10,12 @@ const currentPage = 0;
 const sort = 0;
 
 const [movieData, setMovieData] = useState(null);
+// const twelveMovies = (tmdbAPI) => {
+//     tmdbAPI.forEach((item,index) => {
+//         setMovieData(item);
+//         return tmdbAPI[index];
+
+// });
 
 // useEffect will run on component mounting and if 
     // the city or country changes...
@@ -18,23 +24,18 @@ const [movieData, setMovieData] = useState(null);
         const fetchMovies = async () => {
             // Make our API call here...
             const res = await fetch('https://api.themoviedb.org/3/movie/popular?api_key=fd4d70b7c00eea5374fcc254ca03e285&language=en-US&page=1');
-            let data = await res.json();
-            
-            data = twelveMovies(data.list);
+            let data = await res.json(); 
+            data = movieData(data.list);
             console.log(data);
             setMovieData(data);
 
         }
         fetchMovies();
-
-    },// [city, country])
-
-
-
-
+    
+     }, [movieData]);
 
 	return(
-    <main>
+     <main>
 		
 		<section className='sort'>
 				
@@ -65,143 +66,7 @@ const [movieData, setMovieData] = useState(null);
                 
             
     </main>
-);
-	}
+)};
 
+    export default Home;
 
-
-export default Home;
-// just to keep them in case
-/*	<div className="movie-01">
-<div className='movie-poster'>
-<figure><img src="" alt="" /></figure>
-</div>			
-<div className='movie-context'>
-    <h3>movie name</h3>
-<div className='release-date'></div>
-<div className='rating'></div>
-<div className='summary'></div>
-</div>								
-</div>
-<div className="movie-02">
-<div className='movie-poster'>
-<figure><img src="" alt="" /></figure>
-</div>			
-<div className='movie-context'>
-    <h3>movie name</h3>
-<div className='release-date'></div>
-<div className='rating'></div>
-<div className='summary'></div>
-</div>								
-</div>
-<div className="movie-03">
-<div className='movie-poster'>
-<figure><img src="" alt="" /></figure>
-</div>			
-<div className='movie-context'>
-    <h3>movie name</h3>
-<div className='release-date'></div>
-<div className='rating'></div>
-<div className='summary'></div>
-</div>								
-</div>
-<div className="movie-04">
-<div className='movie-poster'>
-<figure><img src="" alt="" /></figure>
-</div>			
-<div className='movie-context'>
-    <h3>movie name</h3>
-<div className='release-date'></div>
-<div className='rating'></div>
-<div className='summary'></div>
-</div>								
-</div>
-<div className="movie-05">
-<div className='movie-poster'>
-<figure><img src="" alt="" /></figure>
-</div>			
-<div className='movie-context'>
-    <h3>movie name</h3>
-<div className='release-date'></div>
-<div className='rating'></div>
-<div className='summary'></div>
-</div>								
-</div>
-<div className="movie-06">
-<div className='movie-poster'>
-<figure><img src="" alt="" /></figure>
-</div>			
-<div className='movie-context'>
-    <h3>movie name</h3>
-<div className='release-date'></div>
-<div className='rating'></div>
-<div className='summary'></div>
-</div>								
-</div>
-<div className="movie-07">
-<div className='movie-poster'>
-<figure><img src="" alt="" /></figure>
-</div>			
-<div className='movie-context'>
-    <h3>movie name</h3>
-<div className='release-date'></div>
-<div className='rating'></div>
-<div className='summary'></div>
-</div>								
-</div>
-<div className="movie-08">
-<div className='movie-poster'>
-<figure><img src="" alt="" /></figure>
-</div>			
-<div className='movie-context'>
-    <h3>movie name</h3>
-<div className='release-date'></div>
-<div className='rating'></div>
-<div className='summary'></div>
-</div>								
-</div>
-<div className="movie-09">
-<div className='movie-poster'>
-<figure><img src="" alt="" /></figure>
-</div>			
-<div className='movie-context'>
-    <h3>movie name</h3>
-<div className='release-date'></div>
-<div className='rating'></div>
-<div className='summary'></div>
-</div>								
-</div>
-<div className="movie-10">
-<div className='movie-poster'>
-<figure><img src="" alt="" /></figure>
-</div>			
-<div className='movie-context'>
-    <h3>movie name</h3>
-<div className='release-date'></div>
-<div className='rating'></div>
-<div className='summary'></div>
-</div>								
-</div>
-<div className="movie-11">
-<div className='movie-poster'>
-<figure><img src="" alt="" /></figure>
-</div>			
-<div className='movie-context'>
-    <h3>movie name</h3>
-<div className='release-date'></div>
-<div className='rating'></div>
-<div className='summary'></div>
-</div>								
-</div>
-<div className="movie-12">
-<div className='movie-poster'>
-<figure><img src="" alt="" /></figure>
-</div>			
-<div className='movie-context'>
-    <h3>movie name</h3>
-<div className='release-date'></div>
-<div className='rating'></div>
-<div className='summary'></div>
-</div>								
-</div>
-*/

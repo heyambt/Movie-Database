@@ -16,6 +16,7 @@ import SingleMovie from '../components/SingleMovie';
 import PageNotFound from '../components/PageNotFound';
 
 
+
 const AppRouter = () => (
     <Router basename={APP_FOLDER_NAME}>
 		<div className="wrapper">
