@@ -2,7 +2,7 @@
 const API_KEY_ONLY = 'fd4d70b7c00eea5374fcc254ca03e285';
 const API_URL = 'https://api.themoviedb.org/3/';
 
-const IMAGE_URL = 'https://image.tmdb.org/t/p/';
+const IMAGE_URL = 'https://image.tmdb.org/t/p/w500/pB8BM7pdSp6B6Ih7QZ4DrQ3PmJK.jpg';
 
 
 export const API_DATA_MODE = '&mode=json';
