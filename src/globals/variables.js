@@ -1,4 +1,24 @@
 
 const API_KEY_ONLY = 'fd4d70b7c00eea5374fcc254ca03e285';
-export const API_KEY = `&appid=${API_KEY_ONLY}`;
+const API_URL = 'https://api.themoviedb.org/3/movie/550?api_key=';
+
+const IMAGE_URL = 'https://image.tmdb.org/t/p/w500/public/images/6underground.jpg';
+
+
+export const API_DATA_MODE = '&mode=json';
 export const APP_FOLDER_NAME ='/react-movie-app';
+
+
+export {
+
+    API_KEY_ONLY,
+    API_URL,
+    IMAGE_URL
+}
+
+
+
+
+
+
+
