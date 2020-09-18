@@ -6,6 +6,7 @@ import './styles/_header.scss';
 import './styles/_home.scss';
 import './styles/_pageNotFound.scss';
 import './styles/_about.scss';
+import './styles/_movieGrid.scss';
 
 
 

@@ -1,11 +1,11 @@
 import React, {Components, useState, useEffect} from 'react';
 import MovieGrid from '../components/MovieGrid';
-import {API_KEY_ONLY , API_URL, DEFAULT_PAGE} from '../globals/variables';
+import {API_KEY_ONLY , API_URL} from '../globals/variables';
 
 const Home = () => {
 	
-const currentPage = 0;
-const sort = 0;
+// const currentPage = 0;
+// const sort = 0;
 const initialSelection = 'popular';
 
 const [movieData, setMovieData] = useState(null);
