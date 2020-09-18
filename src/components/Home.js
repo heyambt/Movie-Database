@@ -57,13 +57,11 @@ const handleChangeSelection = (currentSelection) => {
 					</select>
 				<button>Select</button>
 			</form> 
-			
-			</div>
+            </div>
 		</section>
-        <div className="twelve">
-             <h3>Movie detail</h3>
-             {movieData && <MovieGrid movie={movieData} />}
-        </div> 
+        
+     {movieData && <MovieGrid movie={movieData} />}
+        
         </div>  
     </main>
 )};

@@ -23,6 +23,10 @@ const MovieGrid = ({movie}) => {
                 <div className='summary'>{movie.overview}</div>
                 <Favorite/>
                 </div>
+                <div className="movie-info">
+                    <button>More Info</button>
+                </div>
+                
                 </div>
                 );
             });
