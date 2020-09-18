@@ -15,12 +15,12 @@ const [selection, setSelection] = useState(initialSelection);
 
 const handleChangeSelection = (currentSelection) => {
     
-    // Create a current City Obj
+    // Create a current movie Obj
     const currentSelectionObj = {
         selection: currentSelection
     }
     
-    // Update our current city state
+    // Update our current movie state
     setSelection(currentSelection);
 
 }
