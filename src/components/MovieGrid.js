@@ -1,6 +1,7 @@
 import React from 'react';
 import {IMAGE_URL} from '../globals/variables';
 import Favorite from '../components/Favorites';
+import { Link } from 'react-router-dom';
 
 
 const MovieGrid = ({movie}) => {
@@ -24,7 +25,9 @@ const MovieGrid = ({movie}) => {
                 <Favorite/>
                 </div>
                 <div className="movie-info">
-                    <button>More Info</button>
+                <Link to={'/'}>More Info </Link>
+                    {/* <button>More Info</button> */}
+                    {/* singlemovie/movie.id --- url parameters */}
                 </div>
                 
                 </div>

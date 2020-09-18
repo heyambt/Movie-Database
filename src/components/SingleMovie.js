@@ -18,7 +18,7 @@ const SingleMovie = () => {
 					<div className='rating'></div>
 					<div className='summary'><p></p></div>
                         
-                    
+                    {/* call for single movie from tmdb */}
 					</div>
                     </div>	
             </section>

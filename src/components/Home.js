@@ -12,22 +12,27 @@ const [movieData, setMovieData] = useState(null);
 const [selection, setSelection] = useState(initialSelection);
 
 // Event Handlers
+const handleFormSubmit = (e) => {
+    setSelection(e.target.elements.selection.value)
+    e.preventDefault()
+}
 
-const handleChangeSelection = (currentSelection) => {
+const handleChangeSelection = (e) => {
     
     // Create a current movie Obj
-    const currentSelectionObj = {
-        selection: currentSelection
-    }
+    // const currentSelectionObj = {
+    //     selection: currentSelection
+    // }
+    console.log(e.target.value)
     
     // Update our current movie state
-    setSelection(currentSelection);
+    setSelection(e.target.value);
 
 }
 
 // useEffect will run on component mounting and if 
     // the city or country changes...
-
+    useEffect(() => {
         const fetchMovies = async (selection) => {
             // Make our API call here...
             const res = await fetch( API_URL+'movie/'+selection+'/?api_key='+API_KEY_ONLY+'&language=en-US&page=1');
@@ -38,7 +43,7 @@ const handleChangeSelection = (currentSelection) => {
 
         }     
         fetchMovies(selection);
-
+    }, [selection])
 	return(
        
      <main>
@@ -47,12 +52,13 @@ const handleChangeSelection = (currentSelection) => {
 				
 			<div className='sort-movie-by'>
 				<h3>Movie</h3>
-			<form>
+			<form onSubmit= {handleFormSubmit}>
 				<label for="sort-movie">What's On</label>
-					<select name="selection" value={selection} handleChangeSelection={handleChangeSelection}>
+                <br/>
+					<select name="selection" value={selection} onChange={handleChangeSelection}>
 						<option value="popular">Popular</option>
-						<option value="toprated">Top Rated</option>
-						<option value="nowplaying">Now Playing</option>
+						<option value="top_rated">Top Rated</option>
+						<option value="now_playing">Now Playing</option>
 						<option value="upcoming">Upcoming</option>
 					</select>
 				<button>Select</button>
