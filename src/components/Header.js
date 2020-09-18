@@ -7,8 +7,8 @@ const Header = () => (
     
 	<header >
         <div className="heading">
-            {/* <h1><Link to={'/'}>Reels</Link></h1> */}
-            <img src = {movieLogo} alt="Logo" />
+
+           <Link to={'/'}> <img src = {movieLogo} alt="Logo" /></Link>
             <div className="menu">
 		    <nav >
                 <ul>

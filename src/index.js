@@ -7,6 +7,8 @@ import './styles/_home.scss';
 import './styles/_pageNotFound.scss';
 import './styles/_about.scss';
 
+
+
  ReactDOM.render( <AppRouter />, document.getElementById('root'));
   
  

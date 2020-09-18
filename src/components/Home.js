@@ -1,8 +1,6 @@
 import React, {Components, useState, useEffect} from 'react';
 import MovieGrid from '../components/MovieGrid';
-import { API_KEY_ONLY, API_URL, IMAGE_URL} from '../globals/variables';
-
-
+import {API_KEY_ONLY , API_URL , IMAGE_URL} from './globals/variables';
 
 const Home = () => {
 	
@@ -10,12 +8,12 @@ const currentPage = 0;
 const sort = 0;
 
 const [movieData, setMovieData] = useState(null);
-// const twelveMovies = (tmdbAPI) => {
-//     tmdbAPI.forEach((item,index) => {
-//         setMovieData(item);
-//         return tmdbAPI[index];
+const twelveMovies = (tmdbAPI) => {
+    tmdbAPI.forEach((item,index) => {
+        setMovieData(item);
+        return tmdbAPI[index];
 
-// });
+});
 
 // useEffect will run on component mounting and if 
     // the city or country changes...
@@ -55,18 +53,15 @@ const [movieData, setMovieData] = useState(null);
 			
 			</div>
 		</section>
-		<section className='list-0f-movies'>
+		{/* <section className='list-0f-movies'>
 				<div className='movies-list'>
 				
 					
 				</div>
 					
-		</section>
-		
-                
-            
+		</section>           
+             */}
     </main>
-)};
+    )}};
 
-    export default Home;
-
+export default Home;
