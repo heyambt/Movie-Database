@@ -6,7 +6,7 @@ const Home = () => {
 	
 const currentPage = 0;
 const sort = 0;
-const initialSelection = DEFAULT_PAGE;
+const initialSelection = 'popular';
 
 const [movieData, setMovieData] = useState(null);
 const [selection, setSelection] = useState(initialSelection);
@@ -59,8 +59,8 @@ const handleChangeSelection = (currentSelection) => {
 			
 			</div>
 		</section>
-        <div className="five-day-forcast">
-             <h3>Movie detal</h3>
+        <div className="twel">
+             <h3>Movie detail</h3>
              {movieData && <MovieGrid movie={movieData} />}
         </div>   
     </main>

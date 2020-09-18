@@ -9,8 +9,7 @@ export const IMAGE_URL = 'https://image.tmdb.org/t/p/w500/';
 export const APP_FOLDER_NAME ='/react-movie-app';
 export const MAX_NUMBER_OF_MOVIES = 12;
 
-// Default page (sorts)
-export const DEFAULT_PAGE = 'Popular';
+
 
 
 
