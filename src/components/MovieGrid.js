@@ -17,11 +17,11 @@ const MovieGrid = ({movie}) => {
                  <img className="poster" src={IMAGE_URL + movie.poster_path} />
                   
                 <div className="title">{movie.title}   </div>
-                <Favorite/>
+                
                 <div className='rating'>{movie.vote_average}</div>
                 <div className='release-date'>{movie.release_date}</div>
                 <div className='summary'>{movie.overview}</div>
-              
+                <Favorite/>
                 </div>
                 </div>
                 );

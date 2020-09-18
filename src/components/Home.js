@@ -40,8 +40,9 @@ const handleChangeSelection = (currentSelection) => {
         fetchMovies(selection);
 
 	return(
+       
      <main>
-		
+		 <div className='wrapper'>
 		<section className='sort'>
 				
 			<div className='sort-movie-by'>
@@ -59,10 +60,11 @@ const handleChangeSelection = (currentSelection) => {
 			
 			</div>
 		</section>
-        <div className="twel">
+        <div className="twelve">
              <h3>Movie detail</h3>
              {movieData && <MovieGrid movie={movieData} />}
-        </div>   
+        </div> 
+        </div>  
     </main>
 )};
 

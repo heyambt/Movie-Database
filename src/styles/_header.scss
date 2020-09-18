@@ -1,38 +1,19 @@
 header {
    background-color:black;
-  
    
+  
+   .logo{
+       width: 200px;
+       margin-left: -40px;
+       padding: 5px;
+     
+   }
   
    .heading{
     display: flex;
     justify-content: space-between;
    }
-     
-    h1 {
-    // @include flatten;
-       font-family: cursive;
-       display: block;
-        line-height: 1em;
-        margin-left: 10px;
-    
-        
-       
-    
-    }
-
-    a {
-        text-decoration: none;
-        text-align: center;
-        color:#581845 ;
-        font-size: 1.6em;
-        color: white;
-        font-weight: bolder;
-      
-
-    }
-
     .menu{
-        
         align-items: center;
         margin: 0;
        ul {
