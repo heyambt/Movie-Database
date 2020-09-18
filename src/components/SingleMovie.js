@@ -1,13 +1,13 @@
 import React from 'react';
-import { useParams } from 'react-router-dom';
+//import { useParams } from 'react-router-dom';
 
 const SingleMovie = () => {
 
     let {id} = useParams();
     console.log(id);
     return(
-        <main>
             <section className='single-movie-section'>
+<<<<<<< HEAD
                     <h2>Movie Name</h2>
                     <div className="movie">
 					<div className='movie-poster'>
@@ -21,8 +21,14 @@ const SingleMovie = () => {
                     {/* call for single movie from tmdb */}
 					</div>
                     </div>	
+=======
+                <div className='row'>
+                  
+                </div>
+                    
+>>>>>>> 956967171c792e08fa31222ae70fe5453d487ce1
             </section>
-        </main>
+       
 
     );
 }
