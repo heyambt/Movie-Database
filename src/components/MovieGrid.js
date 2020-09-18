@@ -1,5 +1,5 @@
 import React from 'react';
-
+import {IMAGE_URL} from '../globals/variables';
 
 
 const MovieGrid = ({movie}) => {
@@ -8,14 +8,15 @@ const MovieGrid = ({movie}) => {
             return arr.map((movie,i) => {
                 return(
                 <div className={`movie-0${i + 1}`} key={i}>
-                <p>Movies in 6 columns go here</p>
                 <div className='movie-poster'>
-                /<figure></figure>
+                <figure></figure>
                 </div>
-                <div className='release-date'>{movie.date}</div>
-                <div className='rating'>{movie.rate}</div>
-                <div className='summary'></div>
-            
+                <div className="title">{movie.title}</div>
+                <div className='release-date'>{movie.release_date}</div>
+                <div className='rating'>{movie.vote_average}</div>
+                <div className='summary'>{movie.overview}</div>
+                <img className="poster" src={IMAGE_URL + movie.poster_path} />
+           
                 </div>
                 );
             });
@@ -29,4 +30,3 @@ const MovieGrid = ({movie}) => {
     
 };
 export default MovieGrid;
-

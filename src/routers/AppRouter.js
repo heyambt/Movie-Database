@@ -12,7 +12,6 @@ import Home from '../components/Home';
 import About from '../components/About';
 import Footer from '../components/Footer';
 import Favorites from '../components/Favorites';
-import SingleMovie from '../components/SingleMovie';
 import PageNotFound from '../components/PageNotFound';
 
 
@@ -26,8 +25,7 @@ const AppRouter = () => (
 			<Switch>
 				<Route path={'/'} exact><Home /></Route>
 				<Route path={'/about'} exact><About /></Route>
-				<Route path={'/favorites'}><Favorites /></Route>
-				<Route path={'/singlemovie/:id'} exact><SingleMovie /></Route>
+				<Route path={'/favorites'} exact><Favorites /></Route>
 				<Route><PageNotFound /></Route>
 			</Switch>
 			<Footer/>
