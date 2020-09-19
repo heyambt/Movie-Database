@@ -51,7 +51,7 @@ const handleChangeSelection = (e) => {
 		<section className='sort'>
 				
 			<div className='sort-movie-by'>
-				<h3>Movie</h3>
+				{/* <h3>Movie</h3> */}
 			<form onSubmit= {handleFormSubmit}>
 				<label for="sort-movie">What's On</label>
                 <br/>
