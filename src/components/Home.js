@@ -65,7 +65,7 @@ const handleChangeSelection = (e) => {
 			</form> 
             </div>
 		</section>
-        
+      
      {movieData && <MovieGrid movie={movieData} />}
         
         </div>  
