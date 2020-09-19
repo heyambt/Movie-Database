@@ -9,9 +9,7 @@ const MovieGrid = ({movie}) => {
             return arr.map((movie,i) => {
                 return(
                 <div className={`movie-0${i + 1}`} key={i}>
-                <div className='movies'>
-                <figure></figure>
-                </div> 
+        
                 <div className="movies-list">
                   
                  <img className="poster" src={IMAGE_URL + movie.poster_path} />

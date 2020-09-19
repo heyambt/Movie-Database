@@ -4,7 +4,11 @@ import { useParams } from 'react-router-dom';
 const SingleMovie = () => {
 
     let {id} = useParams();
-    console.log(id);
+    console.log(id)
+
+   
+
+   
     return(
             <section className='single-movie-section'>
                     <h2>Movie Name</h2>
