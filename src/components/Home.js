@@ -61,7 +61,7 @@ const handleChangeSelection = (e) => {
 						<option value="now_playing">Now Playing</option>
 						<option value="upcoming">Upcoming</option>
 					</select>
-				<button>Select</button>
+				{/* <button>Select</button> */}
 			</form> 
             </div>
 		</section>
