@@ -47,7 +47,7 @@ const handleChangeSelection = (e) => {
 	return(
        
      <main>
-		 <div className='wrapper'>
+		 <div className='movie-wrapper'>
 		<section className='sort'>
 				
 			<div className='sort-movie-by'>
