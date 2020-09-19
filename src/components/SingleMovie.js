@@ -11,11 +11,19 @@ const SingleMovie = () => {
    
     return(
             <section className='single-movie-section'>
-                    <h2>{id}</h2>
-                     
-                    <p>call for single movie from tmdb </p>
-					
-                    
+                    <h2>Movie Name</h2>
+                    <div className="movie">
+					<div className='movie-poster'>
+					<figure><img src="" alt="" /></figure>
+					</div>			
+					<div className='movie-context'>
+					<div className='release-date'></div>
+					<div className='rating'></div>
+					<div className='summary'><p></p></div>
+                        
+                    {/* call for single movie from tmdb */}
+					</div>
+                    </div>	
             </section>
             
        

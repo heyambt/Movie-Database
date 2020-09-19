@@ -1,8 +1,7 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import {IMAGE_URL} from '../globals/variables';
 import Favorite from '../components/Favorites';
 import { Link } from 'react-router-dom';
-
 
 const MovieGrid = ({movie}) => {
     
