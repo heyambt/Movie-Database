@@ -1,8 +1,7 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import {IMAGE_URL} from '../globals/variables';
 import Favorite from '../components/Favorites';
 import { Link } from 'react-router-dom';
-
 
 const MovieGrid = ({movie}) => {
     
@@ -25,8 +24,7 @@ const MovieGrid = ({movie}) => {
                 <Favorite/>
                 </div>
                 <div className="movie-info">
-                <Link to={'/'}>More Info </Link>
-                    {/* <button>More Info</button> */}
+                <Link className='more-info' to={'/'}>More Info </Link>
                     {/* singlemovie/movie.id --- url parameters */}
                 </div>
                 
