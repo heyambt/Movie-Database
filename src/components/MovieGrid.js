@@ -23,7 +23,7 @@ const MovieGrid = ({movie}) => {
 
                 <div className="movie-info">
                 <div className='fav'> <Favorite/></div>
-               <div className='link-to-moreinfo'><Link to={'/singlemovie/' + movie.id }>More Info</Link></div>
+               <div className='link-to-moreinfo'><Link to={'/singlemovie/' + movie.id }><button>More Info</button></Link></div>
                 
                 
                     {/* singlemovie/movie.id --- url parameters */}
