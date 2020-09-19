@@ -17,11 +17,13 @@ const MovieGrid = ({movie}) => {
                 
                 <div className='rating'>{movie.vote_average}</div>
                 <div className='release-date'>{movie.release_date}</div>
-                <div className='summary'>{movie.overview}</div>
-                <Favorite/>
+                <div className='summary'><p>{movie.overview}</p></div>
+              
                 </div>
+
                 <div className="movie-info">
-                <Link to={'/singlemovie/' + movie.id }>More Info </Link>
+                <div className='fav'> <Favorite/></div>
+               <div className='link-to-moreinfo'><Link to={'/singlemovie/' + movie.id }>More Info</Link></div>
                 
                 
                     {/* singlemovie/movie.id --- url parameters */}
