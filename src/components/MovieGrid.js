@@ -10,9 +10,7 @@ const MovieGrid = ({movie}) => {
             return arr.map((movie,i) => {
                 return(
                 <div className={`movie-0${i + 1}`} key={i}>
-                <div className='movies'>
-                <figure></figure>
-                </div> 
+        
                 <div className="movies-list">
                   
                  <img className="poster" src={IMAGE_URL + movie.poster_path} />
@@ -25,8 +23,8 @@ const MovieGrid = ({movie}) => {
                 <Favorite/>
                 </div>
                 <div className="movie-info">
-                <Link to={'/'}>More Info </Link>
-                    {/* <button>More Info</button> */}
+                <Link to={'/singlemovie/' + movie.id }>More Info </Link>
+                
                     {/* singlemovie/movie.id --- url parameters */}
                 </div>
                 
