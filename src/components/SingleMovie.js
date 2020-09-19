@@ -17,9 +17,11 @@ const SingleMovie = () => {
 					
                     
             </section>
+            
        
 
     );
+    
 }
 
 
