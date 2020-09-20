@@ -3,16 +3,14 @@ header {
     width: 100%;
   
    .logo{
-       width: 200px;
+       width: 100px;
        margin-left: -20px;
        padding: 5px;
      
    }
   
    .heading{
-    display: flex;
-    justify-content: space-between;
-   
+  
    }
     .menu{
         align-items: center;
@@ -54,4 +52,66 @@ header {
          }
         }
 
+}
+
+// Desktop View
+@media(min-width:1200px){
+
+    header {
+        background-color:black;
+         width: 100%;
+       
+        .logo{
+            width: 200px;
+            margin-left: -20px;
+            padding: 5px;
+          
+        }
+       
+        .heading{
+         display: flex;
+         justify-content: space-between;
+        
+        }
+         .menu{
+             align-items: center;
+             margin: 0;
+            ul {
+                // @include flatten(true, false);
+                display: flex;
+                justify-content: space-between;
+                padding: 0;
+             
+                
+                
+             }
+            li {
+                flex: 1;
+                list-style-type: none;
+                   
+            }
+            
+            a {
+                display: block;
+                text-decoration: none;
+                font-size: 1.2em;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                font-weight: bolder;
+                color: rgb(240, 233, 235);
+                line-height: 60px;
+                text-align: center;
+                align-items: center;
+                color: white;
+              
+                 padding: 10px;
+                &:hover, &:focus, &:active {
+                    background-color: rgba(rgba(179, 172, 172, 0.486), 0.3);
+                }
+     
+         
+       
+              }
+             }
+     
+     }
 }

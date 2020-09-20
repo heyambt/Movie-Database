@@ -4,7 +4,7 @@
 // }
 
 .wrapper{
-  margin: 0 ;
+  margin: 0;
 
 }
 .movie-wrapper{
@@ -22,15 +22,17 @@
 }
 
 .summary p {
-  padding-left:2vw;
+  
   text-overflow: ellipsis;
   overflow: hidden;
-  width: 325px;
+  width: 200px;
   line-height: 25px;
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
-  padding-top: 15px;
+  margin: auto;
+  margin-bottom: 10px;
+  margin-top: 10px;
   font-size: 1em;
   
 }
@@ -43,13 +45,38 @@
   margin-bottom: 10px;
 }
 
-// mire info favo
+// more info favo
 
 .movie-info {
-  display: flex;
-  justify-content: space-between;
+  // display: flex;
+  text-align: center;
+  // justify-content: space-between;
   margin-bottom: 20px;
-  margin-left:60px
+ 
  
 }
 
+// Desktop View
+@media(min-width:1200px) {
+.summary p {
+  padding-left:2vw;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 325px;
+  line-height: 25px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  padding-top: 15px;
+  font-size: 1.1em;
+
+  
+}
+
+.movie-info {
+ 
+  margin-bottom: 20px;
+ 
+ 
+}
+}

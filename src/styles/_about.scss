@@ -1,12 +1,32 @@
 h2{
    text-align: center;
-   width: 40%;
+   margin: auto;
+   
 
 }
 
+.about {
+    width: 300px;
+    margin: auto;
+
+}
+
+.about p {
+    font-size: 1em;
+    text-align: left;
+    
+}
 p{
-    width: 40%;
     font-size: 1.3em;
     text-align: center;
   
 }
+
+@media(min-width:1200px){
+    .about {
+        width: 450px;
+        
+    
+    }
+    
+} 

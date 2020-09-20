@@ -1,16 +1,17 @@
-footer {
+.footer {
     padding: 10px;
     background-color:black;
-    margin-bottom: 0;
-    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    
 
      p {
         &:first-child {
             margin-top: 0;  
             font-family: Verdana, Geneva, Tahoma, sans-serif;
             color:white;
-            font-size: 1em;
-           margin-left: 400px;
+            font-size: 13px;
+          
         }
     }
         &:last-child {
@@ -18,3 +19,30 @@ footer {
         }
 
 }
+
+// Desktop  view
+@media(min-width:1200px){
+
+    footer {
+        padding: 10px;
+        background-color:black;
+        margin-bottom: 0;
+        width: 100%;
+        text-align: center;
+    
+         p {
+            &:first-child {
+                margin-top: 0;  
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                color:white;
+                font-size: 1em;
+              
+            }
+        }
+            &:last-child {
+                margin-bottom: 0;
+            }
+    
+    }
+
+} 
