@@ -1,6 +1,6 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
-import MovieGrid from './MovieGrid';
+// import MovieGrid from './MovieGrid';
 
 const SingleMovie = () => {
 

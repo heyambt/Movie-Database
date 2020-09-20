@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import {IMAGE_URL} from '../globals/variables';
 import Favorite from '../components/Favorites';
 import { Link } from 'react-router-dom';
@@ -12,7 +12,7 @@ const MovieGrid = ({movie}) => {
                  <div className="movies-list">
                 <div className={`movie-0${i + 1}`} key={i}>
       
-                 <img className="poster" src={IMAGE_URL + movie.poster_path} />
+                 <img className="poster" src={IMAGE_URL + movie.poster_path} alt='movie-poster'/>
                   
                 <div className="title">{movie.title}   </div>
                 

@@ -3,7 +3,6 @@ import {
     BrowserRouter as Router,
     Switch,
 	Route,
-	Link
   } from "react-router-dom";
 
 import { APP_FOLDER_NAME } from '../globals/variables';
@@ -30,7 +29,7 @@ const AppRouter = () => (
 				<Route path={'/favorites'} exact><Favorites /></Route>
 				<Route path={'/singlemovie/:id'}><SingleMovie /></Route>
 				<Route path={'/moviegrid' }> <MovieGrid /></Route>
-				<Route><PageNotFound /></Route>
+				<Route path={'/*'}><PageNotFound /></Route>
 			</Switch>
 			<Footer/>
 		</div>

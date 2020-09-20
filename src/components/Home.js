@@ -1,4 +1,4 @@
-import React, {Components, useState, useEffect} from 'react';
+import React, { useState, useEffect} from 'react';
 import MovieGrid from '../components/MovieGrid';
 import {API_KEY_ONLY , API_URL} from '../globals/variables';
 
@@ -53,7 +53,7 @@ const handleChangeSelection = (e) => {
 			<div className='sort-movie-by'>
 				{/* <h3>Movie</h3> */}
 			<form onSubmit= {handleFormSubmit}>
-				<label for="sort-movie">What's On</label>
+				<label type="sort-movie">What's On</label>
                 <br/>
 					<select name="selection" value={selection} onChange={handleChangeSelection}>
 						<option value="popular">Popular</option>

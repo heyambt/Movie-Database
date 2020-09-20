@@ -7,9 +7,7 @@ export const IMAGE_URL = 'https://image.tmdb.org/t/p/w200/';
 
 
 export const APP_FOLDER_NAME ='/react-movie-app';
-export const MAX_NUMBER_OF_MOVIES = 12;
-
-
+// export const MAX_NUMBER_OF_MOVIES = 12;
 
 
 

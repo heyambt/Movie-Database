@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 
 const favorites = () => {
 
@@ -9,4 +9,5 @@ const favorites = () => {
         </div>
     )
 }
+
 export default favorites;
