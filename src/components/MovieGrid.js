@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import {IMAGE_URL} from '../globals/variables';
 import Favorite from '../components/Favorites';
 import { Link } from 'react-router-dom';
+import SingleMovie from './SingleMovie';
 
 const MovieGrid = ({movie}) => {
     
@@ -23,10 +24,13 @@ const MovieGrid = ({movie}) => {
 
                 <div className="movie-info">
                 <div className='fav'> <Favorite/></div>
-               <div className='link-to-moreinfo'><Link to={'/singlemovie/' + movie.id }><button>More Info</button></Link></div>
+               <div className='link-to-moreinfo'><Link to={'/singlemovie/' + movie.id}>
+                   
+                   <button>More Info</button></Link></div>
                 
                 
                     {/* singlemovie/movie.id --- url parameters */}
+                     
                 </div>
                 
                 </div>
@@ -37,6 +41,7 @@ const MovieGrid = ({movie}) => {
         return (
             <div className="twelve-movie-grid">
                 {movieDivs(movie)}
+                
             </div>
         );
     
