@@ -1,6 +1,7 @@
 import React from 'react';
 
 const About = () => (
+    <div className='about-wrapper'>
     <main>
         <h2>
         Know us
@@ -14,6 +15,7 @@ const About = () => (
         </p>
         </div>
     </main>
+    </div>
 );
 
 
