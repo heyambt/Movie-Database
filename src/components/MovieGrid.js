@@ -1,16 +1,15 @@
 import React from 'react';
-import {IMAGE_URL} from '../globals/variables';
-import Favorite from '../components/Favorites';
+import {IMAGE_URL, STORAGE_YOUR_FAVORITES} from '../globals/variables';
+import Favorite from './Favorite';
 import { Link } from 'react-router-dom';
-import SingleMovie from './SingleMovie';
 
 const MovieGrid = ({movie}) => {
-    
-        const movieDivs = (arr) => {
+
+    const movieDivs = (arr) => {
             return arr.map((movie,i) => {
                 return(
                  <div className="movies-list">
-                <div className={`movie-0${i + 1}`} key={i}>
+                 <div className={`movie-0${i + 1}`} key={i}>
       
                  <img className="poster" src={IMAGE_URL + movie.poster_path} alt='movie-poster'/>
                   
@@ -23,13 +22,12 @@ const MovieGrid = ({movie}) => {
                 </div>
 
                 <div className="movie-info">
-                <div className='fav'> <Favorite/></div>
-               <div className='link-to-moreinfo'><Link to={'/singlemovie/' + movie.id}>
+                <div className='link-to-moreinfo'><Link to={'/singlemovie/' + movie.id}>
                    
                    <button>More Info</button></Link></div>
                 
                 
-                    {/* singlemovie/movie.id --- url parameters */}
+                 
                      
                 </div>
                 
@@ -37,6 +35,7 @@ const MovieGrid = ({movie}) => {
                 );
             });
         }
+        
 
         return (
             <div className="twelve-movie-grid">

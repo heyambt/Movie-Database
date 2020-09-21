@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
-import { API_KEY, API_KEY_ONLY, API_URL, IMAGE_URL} from '../globals/variables';
+import { API_KEY_ONLY, API_URL, IMAGE_URL} from '../globals/variables';
+import {isItemInStorage, setStorage } from '../storageMaker';
 
 
 const SingleMovie = () => {
@@ -10,6 +11,20 @@ const SingleMovie = () => {
 
     let {id} = useParams();
     console.log(id)
+
+    const [error, setError] = useState(false);
+
+    const handleAddFavorite = (e) => {
+        console.log(e);
+        // if(isItemInStorage({movie}) === true ){
+        //     setError(true);
+        //     return;
+        // }
+        // if(error === true){
+        //     setError(false);
+        // }
+        // setStorage(movie);   
+    }
 
     useEffect(() => {
         const fetchDetails = async () => {
@@ -36,6 +51,7 @@ const SingleMovie = () => {
                                 <li>{movie.overview}</li>
                                 <img className="poster" src={IMAGE_URL + movie.poster_path} alt='movie-poster'/>
                                 <li>{movie.runtime}</li>
+                                <div className='fav'> <button onClick={handleAddFavorite}>Add to Favorites</button></div>
                             </ul>
                         )
                     })}                   

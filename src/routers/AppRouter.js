@@ -12,7 +12,7 @@ import About from '../components/About';
 import SingleMovie from '../components/SingleMovie';
 import MovieGrid from '../components/MovieGrid';
 import Footer from '../components/Footer';
-import Favorites from '../components/Favorites';
+import Favorite from '../components/Favorite';
 import PageNotFound from '../components/PageNotFound';
 
 
@@ -26,7 +26,7 @@ const AppRouter = () => (
 			<Switch>
 				<Route path={'/'} exact><Home /></Route>
 				<Route path={'/about'} exact><About /></Route>
-				<Route path={'/favorites'} exact><Favorites /></Route>
+				<Route path={'/favorite'} exact><Favorite /></Route>
 				<Route path={'/singlemovie/:id'}><SingleMovie /></Route>
 				<Route path={'/moviegrid' }> <MovieGrid /></Route>
 				<Route path={'/*'}><PageNotFound /></Route>
