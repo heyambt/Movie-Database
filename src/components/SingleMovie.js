@@ -50,7 +50,8 @@ const SingleMovie = () => {
                                 <li>{movie.vote_average}</li>
                                 <li>{movie.release_date}</li> 
                                 <li>{movie.overview}</li>
-                                   <li>{movie.runtime} mins</li>
+                                <li>{movie.runtime} mins</li>
+                              
                            
                                 <div className='fav'> <button onClick={handleAddFavorite}>Add to Favorites</button></div>
                             </ul>
