@@ -44,13 +44,14 @@ const SingleMovie = () => {
                 <div className='single-movie'>
                     {movieDetails && movieDetails.map((movie) => {
                         return (
-                            <ul>   
+                            <ul>  
+                                <img className="poster" src={IMAGE_URL + movie.poster_path} alt='movie-poster'/> 
                                 <li>{movie.title}</li>
                                 <li>{movie.vote_average}</li>
                                 <li>{movie.release_date}</li> 
                                 <li>{movie.overview}</li>
-                                <img className="poster" src={IMAGE_URL + movie.poster_path} alt='movie-poster'/>
-                                <li>{movie.runtime}</li>
+                                   <li>{movie.runtime} mins</li>
+                           
                                 <div className='fav'> <button onClick={handleAddFavorite}>Add to Favorites</button></div>
                             </ul>
                         )
