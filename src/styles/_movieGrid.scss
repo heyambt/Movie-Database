@@ -1,6 +1,8 @@
+
 .title{
    font-weight: bold;
    font-size: 1.2em;
+   font-family:'Manrope', sans-serif;
    margin: 10px ;
 }
 
@@ -13,27 +15,33 @@
 }   
 
 img.poster {
-   width: 200px;
+   width: 210px;
    margin:auto;
 }
 
 .movies-list{
-   margin: 0 ;
+   margin: 0 auto;
    text-align: center;
   
 }
 .fav{
    margin: 0 auto;
+   
 }
 .link-to-moreinfo{
    margin: 0 auto;
 }
 
+.release-date {
+   font-size: 0.9em;
+   margin-bottom: 10px;
+   font-family:'Manrope', sans-serif;
+}
 
-// Desktop View
+// Tablet view 
 
-@media(min-width:1200px)  {
-
+@media(min-width:600px) {
+   
    .twelve-movie-grid {
       text-align: center;
       display: grid;
@@ -45,5 +53,27 @@ img.poster {
     
    
    }  
+
+   img.poster {
+      width: 270px;
+      margin:auto;
+   }
+   
 }
+// Desktop View
+
+// @media(min-width:1200px)  {
+
+//    .twelve-movie-grid {
+//       text-align: center;
+//       display: grid;
+//       grid-column-gap: 40px;
+//       grid-template-columns: auto auto auto ;
+//       margin: 0 auto;
+//       padding: 10px;
+   
+    
+   
+//    }  
+// }
 

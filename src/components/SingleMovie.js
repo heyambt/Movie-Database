@@ -44,17 +44,24 @@ const SingleMovie = () => {
                 <div className='single-movie'>
                     {movieDetails && movieDetails.map((movie) => {
                         return (
-                            <ul>  
-                                <img className="poster" src={IMAGE_URL + movie.poster_path} alt='movie-poster'/> 
-                                <li>{movie.title}</li>
-                                <li>{movie.vote_average}</li>
-                                <li>{movie.release_date}</li> 
-                                <li>{movie.overview}</li>
-                                <li>{movie.runtime} mins</li>
+                            <div className="single-movie">
+
+                            <div className="poster-and-button">
+                                <img className="single-poster" src={IMAGE_URL + movie.poster_path} alt='movie-poster'/> 
+                                <div className='single-fav'> <button onClick={handleAddFavorite}>Add to Favorites</button></div>
+                            </div>
+
+                            <div className="single-info">
+                                <div className="single-title">{movie.title}</div>
+                                <div className='rating'>Rate: {movie.vote_average}</div>
+                                <div className='release-date'>{movie.release_date}</div> 
+                                <div className='single-summary'>{movie.overview}</div>
+                                <div className='run-time'>Run Time: {movie.runtime} mins</div>
+                            </div>
                               
                            
-                                <div className='fav'> <button onClick={handleAddFavorite}>Add to Favorites</button></div>
-                            </ul>
+                                
+                            </div>
                         )
                     })}                   
             </div>
