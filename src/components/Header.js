@@ -11,10 +11,14 @@ const Header = () => (
            <Link to={'/'}> <img className='logo' src = {movieLogo} alt="Logo" /></Link>
             <div className="menu">
 		    <nav >
-                <ul>
-                    <li><NavLink to={'/'} exact>Home</NavLink></li>
-                    <li><NavLink to={'/about'}>About</NavLink></li>
-                    <li><NavLink to={'/favourites'}>Favourites</NavLink></li>
+                {/* <button className='hamburger' id='hamburger'>
+                    <i className='fas fa-bars'></i>
+                </button> */}
+                
+                <ul className='nav-ul' id='nav-ul'>
+                    <li className='home'><NavLink  to={'/'} exact>Home</NavLink></li>
+                    <li className='about'><NavLink to={'/about'}>About</NavLink></li>
+                    <li className='favourites'><NavLink to={'/favourites'}>Favourites</NavLink></li>
                 </ul>
 	        </nav>
             </div>
