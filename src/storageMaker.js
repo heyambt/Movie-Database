@@ -5,7 +5,7 @@ export const isItemInStorage = (newItem) => {
     if(!yourFavorties){
         return [];
     }
-    if(yourFavorties.find(currentFav => currentFav === newItem)){
+    if(yourFavorties.find(currentFav => currentFav.id == newItem.id)){
         return true;
     }
     return yourFavorties;
@@ -47,9 +47,11 @@ export const getStorage = (storageItem = STORAGE_YOUR_FAVORITES) => {
     }   
 }
 
-export const removeFromStorage = (movieId, storageItem = STORAGE_YOUR_FAVORITES) => {
+export const removeFromStorage = (movie, storageItem = STORAGE_YOUR_FAVORITES) => {
     let items = getStorage();
-    let indexOfItemToRemove = items.findIndex(movieId);
+    let indexOfItemToRemove = items.findIndex(function(item){
+        return item.id == movie.id
+    });
     items.splice(indexOfItemToRemove, 1);
     let itemsForStorage = JSON.stringify(items);
     localStorage.setItem(storageItem, itemsForStorage);

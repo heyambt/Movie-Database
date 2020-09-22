@@ -1,17 +1,45 @@
-import React from 'react';
+import React, { useState, useEffect} from 'react';
 import {IMAGE_URL, STORAGE_YOUR_FAVORITES} from '../globals/variables';
-import Favorite from './Favorite';
 import { Link } from 'react-router-dom';
+import { isItemInStorage, getStorage, setStorage, removeFromStorage } from '../storageMaker';
 
 const MovieGrid = ({movie}) => {
 
+    const[error, setError] = useState(false);
+
+    const handleAddFavorite = (movie) => {
+        if(isItemInStorage({movie}) === true )
+        {
+             setError(true);
+             return;
+        }
+        if(error === true){
+            setError(false);
+        }
+        setStorage(movie);
+
+    }
+
+    const removeFromFavorite = (movie) => {
+        removeFromStorage(movie);
+    } 
+
     const movieDivs = (arr) => {
             return arr.map((movie,i) => {
-                return(
-                 <div className="movies-list">
-                 <div className={`movie-0${i + 1}`} key={i}>
+            
+            const getFavs = getStorage()
+
+            let indexFetched = getFavs.findIndex(function(item){
+                return item.id == movie.id
+            });
+        
+             console.log(indexFetched);
+
+            return(
+                <div className="movies-list">
+                <div className={`movie-0${i + 1}`} key={i}>
       
-                 <img className="poster" src={IMAGE_URL + movie.poster_path} alt='movie-poster'/>
+                <img className="poster" src={IMAGE_URL + movie.poster_path} alt='movie-poster'/>
                   
                 <div className="title">{movie.title}   </div>
                 
@@ -25,6 +53,14 @@ const MovieGrid = ({movie}) => {
                 <div className='link-to-moreinfo'><Link to={'/singlemovie/' + movie.id}>
                    
                    <button>More Info</button></Link></div>
+                   <div className='single-fav'>
+                        {indexFetched >= 0 ? (
+                            <button onClick={() => {removeFromFavorite(movie)}} style={{color: 'red'}}>Remove Favorite</button>
+                         ):
+                         (
+                            <button onClick={()=> {handleAddFavorite(movie)}} style={{color: 'white'}}>Add to Favorites</button>
+                        )}
+                    </div>
                 
                 
                  

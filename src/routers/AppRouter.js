@@ -26,7 +26,7 @@ const AppRouter = () => (
 			<Switch>
 				<Route path={'/'} exact><Home /></Route>
 				<Route path={'/about'} exact><About /></Route>
-				<Route path={'/favorite'} exact><Favorite /></Route>
+				<Route path={'/favorites'} exact><Favorite /></Route>
 				<Route path={'/singlemovie/:id'}><SingleMovie /></Route>
 				<Route path={'/moviegrid' }> <MovieGrid /></Route>
 				<Route path={'/*'}><PageNotFound /></Route>

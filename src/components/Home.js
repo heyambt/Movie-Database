@@ -43,7 +43,6 @@ const handleChangeSelection = (e) => {
 
         }     
         fetchMovies(selection);
-        localStorage.clear();
     }, [selection])
 	return(
        

@@ -1,30 +1,53 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { API_KEY_ONLY, API_URL, IMAGE_URL} from '../globals/variables';
-import {isItemInStorage, setStorage } from '../storageMaker';
+import {getStorage, isItemInStorage, setStorage, removeFromStorage } from '../storageMaker';
 
 
 const SingleMovie = () => {
     const initialMovieData = [];
 
-    const[movieDetails, setMovieDetails] = useState(null)
+    const[movieDetails, setMovieDetails] = useState(null);
+    const[favorites, setFavorites] = useState([]);
+    const[favIndex, setFavIndex] = useState(-1);
+    
 
     let {id} = useParams();
     console.log(id)
 
     const [error, setError] = useState(false);
 
-    const handleAddFavorite = (e) => {
-        console.log(e);
-        // if(isItemInStorage({movie}) === true ){
-        //     setError(true);
-        //     return;
-        // }
-        // if(error === true){
-        //     setError(false);
-        // }
-        // setStorage(movie);   
+    const handleAddFavorite = (movie) => {
+        if(isItemInStorage({movie}) === true )
+        {
+             setError(true);
+             return;
+        }
+        if(error === true){
+            setError(false);
+        }
+        setStorage(movie);
+
     }
+
+    const removeFromFavorite = (movie) => {
+        removeFromStorage(movie);
+    }   
+
+    useEffect(() => {
+        const getFavs = getStorage()
+
+        let indexFetched = getFavs.findIndex(function(item){
+            return item.id == id
+        });
+        
+        setFavIndex(indexFetched);
+
+        if(getFavs !== null){
+            setFavorites([...getFavs])
+        }
+    },[])
+
 
     useEffect(() => {
         const fetchDetails = async () => {
@@ -48,7 +71,14 @@ const SingleMovie = () => {
 
                             <div className="poster-and-button">
                                 <img className="single-poster" src={IMAGE_URL + movie.poster_path} alt='movie-poster'/> 
-                                <div className='single-fav'> <button onClick={handleAddFavorite}>Add to Favorites</button></div>
+                                <div className='single-fav'>
+                                    {favIndex >= 0 ? (
+                                        <button onClick={() => {removeFromFavorite(movie)}} style={{color: 'red'}}>Remove Favorite</button>
+                                    ):
+                                    (
+                                        <button onClick={()=> {handleAddFavorite(movie)}} style={{color: 'white'}}>Add to Favorites</button>
+                                   )}
+                                </div>
                             </div>
 
                             <div className="single-info">
