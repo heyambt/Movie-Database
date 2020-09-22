@@ -27,11 +27,13 @@ const SingleMovie = () => {
             setError(false);
         }
         setStorage(movie);
+        setFavIndex(1);
 
     }
 
     const removeFromFavorite = (movie) => {
         removeFromStorage(movie);
+        setFavIndex(-1);
     }   
 
     useEffect(() => {
@@ -64,7 +66,7 @@ const SingleMovie = () => {
    
     return(
             <section className='single-movie-section'>
-                <div className='single-movie'>
+               
                     {movieDetails && movieDetails.map((movie) => {
                         return (
                             <div className="single-movie">
@@ -85,7 +87,7 @@ const SingleMovie = () => {
                                 <div className="single-title">{movie.title}</div>
                                 <div className='rating'>Rate: {movie.vote_average}</div>
                                 <div className='release-date'>{movie.release_date}</div> 
-                                <div className='single-summary'>{movie.overview}</div>
+                                <div className='single-summary'><p>{movie.overview}</p></div>
                                 <div className='run-time'>Run Time: {movie.runtime} mins</div>
                             </div>
                               
@@ -94,7 +96,7 @@ const SingleMovie = () => {
                             </div>
                         )
                     })}                   
-            </div>
+            
 					
         </section>              
 

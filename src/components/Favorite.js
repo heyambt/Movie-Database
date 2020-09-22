@@ -15,12 +15,15 @@ const Favorite = () => {
         }
     },[])
 
-  
+    // const handleRemoveFav = (movies) => {
+    //     console.log('removefav');
+    //     setFavMovies(movies);
+    // }
     return(
         <div className="moviewrapper">
             
-            {favMovies && <MovieGrid movie={favMovies} />}
-
+            {favMovies && <MovieGrid movie={favMovies}  />}
+            
         </div>
     )
 }

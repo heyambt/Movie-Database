@@ -2,13 +2,13 @@
 
 
 // google fonts
-// @import url ('link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600&display=swap');
-// @import './styles/footer.scss';
-// @import './styles/header.scss';
-// @import './styles/home.scss';
-// @import './styles/pageNotFound.scss';
-// @import './styles/about.scss';
-// @import './styles/movieGrid.scss';
-// @import './styles/singleMovie.scss';
-// @import './styles/types.scss';
-// @import './styles/form.scss';
+//@import url('link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600&display=swap');
+@import './footer';
+@import './header.scss';
+@import './menu';
+@import './home.scss';
+@import './pageNotFound.scss';
+@import './about.scss';
+@import './movieGrid.scss';
+@import './singleMovie.scss';
+@import './form.scss';

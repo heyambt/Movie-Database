@@ -7,6 +7,9 @@ const MovieGrid = ({movie}) => {
 
     const[error, setError] = useState(false);
 
+    const [faveMovies, setFaveMovies] = useState(getStorage());
+
+
     const handleAddFavorite = (movie) => {
         if(isItemInStorage({movie}) === true )
         {
@@ -16,20 +19,23 @@ const MovieGrid = ({movie}) => {
         if(error === true){
             setError(false);
         }
-        setStorage(movie);
-
+        const movies = setStorage(movie);
+        setFaveMovies(movies);
+        
     }
 
     const removeFromFavorite = (movie) => {
-        removeFromStorage(movie);
+        const movies = removeFromStorage(movie);
+        setFaveMovies(movies);
+        // handleRemoveFav(movies);
     } 
 
     const movieDivs = (arr) => {
             return arr.map((movie,i) => {
             
-            const getFavs = getStorage()
+            // const getFavs = getStorage()
 
-            let indexFetched = getFavs.findIndex(function(item){
+            let indexFetched = faveMovies.findIndex(function(item){
                 return item.id == movie.id
             });
         

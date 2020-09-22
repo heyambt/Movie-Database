@@ -1,6 +1,7 @@
 header {
    background-color:black;
     width: 100%;
+    
   
    .logo{
        width: 150px;
@@ -10,7 +11,9 @@ header {
    }
   
    .heading{
-  
+    display: flex;
+    flex-wrap: wrap;
+    //justify-content: space-between;
    }
     .menu{
         align-items: center;

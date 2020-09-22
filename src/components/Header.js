@@ -1,19 +1,24 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { Link } from 'react-router-dom';
 import { NavLink } from 'react-router-dom';
 import movieLogo from '../images/movieLogo.png';
 
-const Header = () => (
+
+const Header = () => {
     
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
+    return (
 	<header >
         <div className="heading">
 
            <Link to={'/'}> <img className='logo' src = {movieLogo} alt="Logo" /></Link>
+           <button className='hamburger' id='hamburger' onClick={() => { setIsMenuOpen(!isMenuOpen) }}>
+                    Menu
+                </button>
             <div className="menu">
-		    <nav >
-                {/* <button className='hamburger' id='hamburger'>
-                    <i className='fas fa-bars'></i>
-                </button> */}
+           
+		    <nav className={ isMenuOpen ? 'open' : 'closed' } >
+                
                 
                 <ul className='nav-ul' id='nav-ul'>
                     <li className='home'><NavLink  to={'/'} exact>Home</NavLink></li>
@@ -27,7 +32,8 @@ const Header = () => (
 
 		
 	</header>
-);
+    );
+}
 
 
 
