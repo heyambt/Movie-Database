@@ -6,9 +6,9 @@ h2{
 
 }
 
-.about {
+main .about {
     width: 300px;
-    margin: auto;
+    margin: 0 auto;
 
 }
 .about-wrapper{
@@ -35,8 +35,8 @@ p{
     font-size: 8px;
 }
 
-@media(min-width:1200px){
-    .about {
+@media(min-width:900px){
+    main .about {
         width: 450px;
         
     
