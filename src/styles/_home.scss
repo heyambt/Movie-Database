@@ -59,12 +59,12 @@
 }
 
 // Desktop View
-@media(min-width:900px) {
+@media(min-width:1025px) {
 .summary p {
   padding-left:2vw;
   text-overflow: ellipsis;
   overflow: hidden;
-  width: 325px;
+  width: 305px;
   line-height: 25px;
   display: -webkit-box;
   -webkit-line-clamp: 2;
@@ -75,10 +75,5 @@
   
 }
 
-.movie-info {
- 
-  margin-bottom: 20px;
- 
- 
-}
+
 }

@@ -36,17 +36,55 @@ p{
     font-size: 8px;
 }
 
-@media(min-width:900px){
+@media(min-width:700px){
     main .about {
         width: 450px;
         
     
     }
     .about-wrapper{
-        margin: 95px;
+        margin-bottom: 10px;
+    
+    }
+    .about p {
+        font-size: 1.5em;
+        text-align: left;
+        font-family:'Manrope', sans-serif;
+        
     }
     
     .tmdb{
-        margin-left:150px;
+        margin-left:180px;
+        margin-top: 20px;
+        
+       
+    }
+    .tmdb-info{
+        margin-bottom: 180px;
     }
 } 
+@media(min-width:1024px){
+    main .about {
+        width: 600px;
+       
+        
+    
+    }
+   
+    .about p {
+        font-size: 1.7em;
+        text-align: left;
+        font-family:'Manrope', sans-serif;
+        
+    }
+    
+    .tmdb{
+        margin-left:180px;
+        
+       
+    }
+    .tmdb-info{
+        margin-bottom: 530px;
+    }
+} 
+

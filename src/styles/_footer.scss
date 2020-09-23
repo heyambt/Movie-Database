@@ -23,6 +23,11 @@
         }
 
 }
+@media(min-width:320px){
+    .footer-info{
+     padding: 10px;
+    }
+}
 
 // Desktop  view
 @media(min-width:900px){
@@ -44,7 +49,7 @@
             }
         }
             &:last-child {
-                margin-bottom: 0;
+                margin-bottom:0;
             }
     
     }
