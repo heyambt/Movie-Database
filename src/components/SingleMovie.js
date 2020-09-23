@@ -8,7 +8,6 @@ const SingleMovie = () => {
     const initialMovieData = [];
 
     const[movieDetails, setMovieDetails] = useState(null);
-    const[favorites, setFavorites] = useState([]);
     const[favIndex, setFavIndex] = useState(-1);
     
 
@@ -44,10 +43,6 @@ const SingleMovie = () => {
         });
         
         setFavIndex(indexFetched);
-
-        if(getFavs !== null){
-            setFavorites([...getFavs])
-        }
     },[])
 
 

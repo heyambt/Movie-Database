@@ -19,13 +19,19 @@ const Favorite = () => {
     //     console.log('removefav');
     //     setFavMovies(movies);
     // }
-    return(
-        <div className="moviewrapper">
-            
-            {favMovies && <MovieGrid movie={favMovies}  />}
-            
-        </div>
-    )
+    if(favMovies && favMovies.length == 0){
+        return(
+            <h1>Sorry you have no favourited movies. Return to the home page to add a favourite movie.</h1>
+        )
+    }
+    else {
+        return(
+            <div className="moviewrapper">
+                {favMovies && <MovieGrid movie={favMovies}  />}
+                
+            </div>
+        )
+    }
 }
 
 export default Favorite;
