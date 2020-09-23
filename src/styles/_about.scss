@@ -7,16 +7,17 @@ h2{
 }
 
 main .about {
-    width: 300px;
+    width: 200px;
     margin: 0 auto;
+    padding: 5px;
 
 }
 .about-wrapper{
-    margin: 67px;
+    margin:50px;
 }
 
 .about p {
-    font-size: 1em;
+    font-size: .8em;
     text-align: left;
     font-family:'Manrope', sans-serif;
     
@@ -28,8 +29,8 @@ p{
   
 }
 .tmdb{
-  width: 90px;
-  margin-left: 100px;
+  width: 60px;
+  margin-left: 60px;
 }
 .tmdb-info{
     font-size: 8px;

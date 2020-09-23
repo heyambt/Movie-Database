@@ -41,14 +41,14 @@ header {
        a {
            display: block;
            text-decoration: none;
-           font-size: 0.9em;
+           font-size: 1.2em;
            font-family: Verdana, Geneva, Tahoma, sans-serif;
            font-weight: bolder;
            color: rgb(240, 233, 235);
            line-height: 50px;
            text-align: center;
            align-items: center;
-           padding: 10px;
+           padding: 9px;
            color: white;
            &:hover, &:focus, &:active {
                background-color: rgba(rgba(179, 172, 172, 0.486), 0.3);
