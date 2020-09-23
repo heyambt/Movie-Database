@@ -11,6 +11,9 @@ h2{
     margin: auto;
 
 }
+.about-wrapper{
+    margin: 67px;
+}
 
 .about p {
     font-size: 1em;
@@ -24,6 +27,13 @@ p{
     font-family:'Manrope', sans-serif;
   
 }
+.tmdb{
+  width: 90px;
+  margin-left: 100px;
+}
+.tmdb-info{
+    font-size: 8px;
+}
 
 @media(min-width:1200px){
     .about {
@@ -32,7 +42,10 @@ p{
     
     }
     .about-wrapper{
-        margin: 30px;
+        margin: 95px;
     }
     
+    .tmdb{
+        margin-left:150px;
+    }
 } 

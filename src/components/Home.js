@@ -19,10 +19,7 @@ const handleFormSubmit = (e) => {
 
 const handleChangeSelection = (e) => {
     
-    // Create a current movie Obj
-    // const currentSelectionObj = {
-    //     selection: currentSelection
-    // }
+   
     console.log(e.target.value)
     
     // Update our current movie state
@@ -30,8 +27,7 @@ const handleChangeSelection = (e) => {
 
 }
 
-// useEffect will run on component mounting and if 
-    // the city or country changes...
+
     useEffect(() => {
         const fetchMovies = async (selection) => {
             // Make our API call here...
@@ -51,7 +47,7 @@ const handleChangeSelection = (e) => {
 		<section className='sort'>
 				
 			<div className='sort-movie-by'>
-				{/* <h3>Movie</h3> */}
+		
 			<form onSubmit= {handleFormSubmit}>
 				<label type="sort-movie">What's On</label>
                 <br/>

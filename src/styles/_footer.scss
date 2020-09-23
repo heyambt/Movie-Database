@@ -1,8 +1,12 @@
-.footer {
-    padding: 10px;
+.footer-info {
+    padding: 5px;
     background-color:black;
     text-align: center;
     margin: 0 auto;
+    color: white;
+    font-size: 13px;
+   
+   
     
 
      p {
@@ -10,8 +14,8 @@
             margin-top: 0;  
             font-family: Verdana, Geneva, Tahoma, sans-serif;
             color:white;
-            font-size: 13px;
-          
+            font-size: 14px;
+         
         }
     }
         &:last-child {
@@ -23,8 +27,8 @@
 // Desktop  view
 @media(min-width:1200px){
 
-    footer {
-        padding: 10px;
+    footer-info {
+        padding: 5px;
         background-color:black;
         margin-bottom: 0;
         width: 100%;

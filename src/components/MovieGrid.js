@@ -61,10 +61,10 @@ const MovieGrid = ({movie}) => {
                    <button>More Info</button></Link></div>
                    <div className='single-fav'>
                         {indexFetched >= 0 ? (
-                            <button onClick={() => {removeFromFavorite(movie)}} style={{color: 'red'}}>Remove Favorite</button>
+                            <button className='remove-fav'onClick={() => {removeFromFavorite(movie)}}>Remove Favorite</button>
                          ):
                          (
-                            <button onClick={()=> {handleAddFavorite(movie)}} style={{color: 'white'}}>Add to Favorites</button>
+                            <button className='add-fav'onClick={()=> {handleAddFavorite(movie)}} style={{color: 'white'}}>Add to Favorites</button>
                         )}
                     </div>
                 

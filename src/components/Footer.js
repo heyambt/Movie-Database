@@ -4,8 +4,9 @@ const d = new Date();
 const y = d.getFullYear();
 
 const Footer = () => (
-    <footer className='footer'>
-        <p>Created by Heyam Banitorof and Vidhi Shukla &copy;{y}</p>
+    <footer className='footer-info'>
+        <p>Created by Heyam Banitorof and Vidhi Shukla </p>
+        <p>&copy;{y} | Reels</p>
     </footer>
 );
 

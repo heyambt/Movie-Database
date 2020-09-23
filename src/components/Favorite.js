@@ -15,13 +15,10 @@ const Favorite = () => {
         }
     },[])
 
-    // const handleRemoveFav = (movies) => {
-    //     console.log('removefav');
-    //     setFavMovies(movies);
-    // }
+
     if(favMovies && favMovies.length == 0){
         return(
-            <h1>Sorry you have no favourited movies. Return to the home page to add a favourite movie.</h1>
+            <h1>Sorry! You have no favourited movies..... Return to the home page to add a favourite movie.</h1>
         )
     }
     else {
