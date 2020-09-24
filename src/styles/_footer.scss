@@ -7,6 +7,7 @@
     font-size: 13px;
    
    
+   
     
 
      p {
@@ -38,6 +39,7 @@
         margin-bottom: 0;
         width: 100%;
         text-align: center;
+        
     
          p {
             &:first-child {
@@ -55,3 +57,27 @@
     }
 
 } 
+@media(min-width:1024px){
+    footer-info {
+        padding: 5px;
+        background-color:black;
+        margin-bottom: 0;
+        width: 100%;
+        text-align: center;
+        
+    
+         p {
+            &:first-child {
+                margin-top: 0;  
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                color:white;
+                font-size: 1em;
+              
+            }
+        }
+            &:last-child {
+                margin-bottom:0;
+            }
+    
+    }
+}
