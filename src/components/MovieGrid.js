@@ -58,7 +58,7 @@ const MovieGrid = ({movie}) => {
                 <div className="movie-info">
                 <div className='link-to-moreinfo'><Link to={'/singlemovie/' + movie.id}>
                    
-                   <button>More Info</button></Link></div>
+                   <button className='more-info'>More Info</button></Link></div>
                    <div className='single-fav'>
                         {indexFetched >= 0 ? (
                             <button className='remove-fav'onClick={() => {removeFromFavorite(movie)}}>Remove Favorite</button>
