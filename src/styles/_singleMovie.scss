@@ -48,10 +48,13 @@ button.single-fav {
 img.single-poster {
     width: 300px ;
 }
-.remove-fav{
-    background-color:black;
+.add-fav:hover{
+    background-color: rgba(0, 0, 0, 0.774);
  }
-
+ .remove-fav:hover{
+    background-color: rgba(0, 0, 0, 0.774);
+   
+ }
 // Tablet view 
 
 @media(min-width:700px){

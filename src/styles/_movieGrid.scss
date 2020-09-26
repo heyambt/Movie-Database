@@ -61,8 +61,12 @@ img.poster {
    }
    
 }
-.remove-fav{
-   background-color:black;
+.add-fav:hover{
+   background-color: rgba(0, 0, 0, 0.774);
+}
+.remove-fav:hover{
+   background-color: rgba(0, 0, 0, 0.774);
+  
 }
 // Desktop View
 
@@ -71,11 +75,11 @@ img.poster {
    .twelve-movie-grid {
       text-align: center;
       display: grid;
-      grid-column-gap: 0;
+      grid-column-gap: 200px;
       grid-template-columns: auto auto auto ;
       margin-right: 20px;
     
-   
+
    
    
    }  
