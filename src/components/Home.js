@@ -31,7 +31,7 @@ const handleChangeSelection = (e) => {
     useEffect(() => {
         const fetchMovies = async (selection) => {
             // Make our API call here...
-            const res = await fetch( API_URL+'movie/'+selection+'/?api_key='+API_KEY_ONLY+'&language=en-US&page=1');
+            const res = await fetch( API_URL+'/movie/'+selection+'/?api_key='+API_KEY_ONLY+'&language=en-US&page=1');
             let data = await res.json(); 
            // data = twelveMovies(data.list);
             console.log(data);
